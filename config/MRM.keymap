@@ -18,9 +18,9 @@
         default_layer {
             label = "Def";
             bindings = <
-&kp UP    &kp A      &kp B      &lt 3 ENTER
-&kp LEFT  &kp SPACE  &kp RIGHT  &lt 1 C      &kp D  &kp BKSP
-&kp DOWN
+          &kp UP                &kp A    &kp B  &lt 3 ENTER
+&kp LEFT  &kp SPACE  &kp RIGHT  &lt 1 C  &kp D  &kp BKSP
+          &kp DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
@@ -29,9 +29,9 @@
         func_layer {
             label = "Func";
             bindings = <
-&kp PG_UP  &kp A     &kp B    &kp ENTER
-&kp HOME   &kp BKSP  &kp END  &kp C      &kp D  &kp BKSP
-&kp PG_DN
+          &kp PG_UP           &kp A  &kp B  &kp ENTER
+&kp HOME  &kp BKSP   &kp END  &kp C  &kp D  &kp BKSP
+          &kp PG_DN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
@@ -40,9 +40,9 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-&mkp MB3   &mkp MB1  &mkp MB2  &trans
-&mkp MB1   &kp BKSP  &mkp MB2  &mkp MB3  &trans  &trans
-&kp PG_DN
+          &mkp MB3             &mkp MB1  &mkp MB2  &trans
+&mkp MB1  &kp BKSP   &mkp MB2  &mkp MB3  &trans    &trans
+          &kp PG_DN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
@@ -51,9 +51,9 @@
         bt_layer {
             label = "BT";
             bindings = <
-&kp PG_UP  &bt BT_SEL 0  &bt BT_SEL 1  &kp ENTER
-&kp HOME   &kp BKSP      &kp END       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp PG_DN
+        &trans          &bt BT_SEL 0  &bt BT_SEL 1  &kp ENTER
+&trans  &trans  &trans  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
