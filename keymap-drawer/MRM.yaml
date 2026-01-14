@@ -4,7 +4,7 @@ layers:
   - UP
   - A
   - B
-  - ENTER
+  - {t: ENTER, h: BT}
   - LEFT
   - SPACE
   - RIGHT
@@ -36,4 +36,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG DN
-  BT: [PG UP, A, B, ENTER, HOME, BKSP, END, C, D, BKSP, PG DN]
+  BT:
+  - PG UP
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: ENTER, type: held}
+  - HOME
+  - BKSP
+  - END
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - PG DN
