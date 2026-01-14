@@ -1,0 +1,39 @@
+layout: {zmk_keyboard: MRM}
+layers:
+  Def:
+  - UP
+  - A
+  - B
+  - ENTER
+  - LEFT
+  - SPACE
+  - RIGHT
+  - {t: C, h: Func}
+  - D
+  - BKSP
+  - DOWN
+  Func:
+  - PG UP
+  - A
+  - B
+  - ENTER
+  - HOME
+  - BKSP
+  - END
+  - {t: C, type: held}
+  - D
+  - BKSP
+  - PG DN
+  Mouse:
+  - '&mkp MB3'
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - BKSP
+  - '&mkp MB2'
+  - '&mkp MB3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PG DN
+  BT: [PG UP, A, B, ENTER, HOME, BKSP, END, C, D, BKSP, PG DN]
