@@ -1,0 +1,97 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
+#include <behaviors/rgbled_widget.dtsi>
+
+/ {
+	chosen {
+		zmk,physical-layout = &layout_MRM;
+	};
+   
+	default_transform: keymap_transform_0 {
+		compatible = "zmk,matrix-transform";
+		columns = <5>;
+		rows = <5>;
+		
+		map = <
+	 	           RC( 2, 5)             RC( 1, 0)  RC( 0, 1)  RC( 0, 2)
+		RC( 3, 5)  RC( 4, 5)  RC( 0, 5)  RC( 2, 0)  RC( 2, 1)  RC( 1, 2)
+		           RC( 1, 5)
+      >;
+	};
+
+	layout_MRM: layout_MRM {
+		compatible = "zmk,physical-layout";
+		display-name = "MRM";
+		transform = <&default_transform>;
+		kscan = <&kscan0>;
+		
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100  150    0       0     0     0>
+            , <&key_physical_attrs 100 100  500    0       0     0     0>
+            , <&key_physical_attrs 100 100  600    0       0     0     0>
+            , <&key_physical_attrs 100 100  825    0       0     0     0>
+            , <&key_physical_attrs 100 100   50  100       0     0     0>
+            , <&key_physical_attrs 100 100  150  100       0     0     0>
+            , <&key_physical_attrs 100 100  250  100       0     0     0>
+            , <&key_physical_attrs 100 100  500  100       0     0     0>
+            , <&key_physical_attrs 100 100  600  100       0     0     0>
+            , <&key_physical_attrs 100 100  825  100       0     0     0>
+            , <&key_physical_attrs 100 100  150  200       0     0     0>
+            ;
+	};
+
+    position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+        layout_MRM {
+            physical-layout = <&layout_MRM>;
+            positions = <>;
+        };
+    };
+
+   aliases {
+      led-red = &led0;
+      led-green = &led1;
+      led-blue = &led2;
+   };
+
+   leds {
+      compatible = "gpio-leds";
+      status = "okay";
+      led0: led_0 {
+        gpios = <&gpio0 26 GPIO_ACTIVE_LOW>;  // red LED, connected to P0.26
+      };
+      led1: led_1 {
+        gpios = <&gpio0 30 GPIO_ACTIVE_LOW>;  // green LED, connected to P0.30
+      };
+      led2: led_2 {
+        gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;  // blue LED, connected to P0.06
+      };
+   };
+   
+   // Encoders
+   slot1_encoder: slot1_encoder {
+      compatible = "alps,ec11";
+      status = "disabled";
+   };
+
+   slot2_encoder: slot2_encoder {
+      compatible = "alps,ec11";
+      status = "disabled";
+   };
+
+   slot3_encoder: slot3_encoder {
+      compatible = "alps,ec11";
+      status = "disabled";
+   };
+
+   sensors: sensors {
+      compatible = "zmk,keymap-sensors";
+      sensors = <&slot1_encoder &slot2_encoder &slot3_encoder>;
+   };
+
+   vbatt: vbatt {
+    // Disable default battery monitoring
+    status = "disabled";
+   };
+};
