@@ -37,14 +37,14 @@ layers:
   - {t: ▽, type: trans}
   - PG DN
   BT:
-  - PG UP
+  - {t: ▽, type: trans}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: ENTER, type: held}
-  - HOME
-  - BKSP
-  - END
+  - {t: ▽, type: trans}
+  - BT CLR ALL
+  - {t: ▽, type: trans}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - PG DN
+  - {t: ▽, type: trans}
