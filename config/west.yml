@@ -8,10 +8,6 @@ manifest:
       url-base: https://github.com/badjeff
     - name: te9no
       url-base: https://github.com/te9no
-    - name: kot149
-      url-base: https://github.com/kot149
-    - name: mctechnology17
-      url-base: https://github.com/mctechnology17
     - name: petejohanson
       url-base: https://github.com/petejohanson
   projects:
@@ -29,17 +25,11 @@ manifest:
     - name: zmk-analog-input-driver
       remote: badjeff
       revision: main
-    - name: zmk-layout-shift
-      remote: kot149
-      revision: v1
     - name: zmk-input-processor-keybind
       remote: te9no
       revision: main
     - name: cirque-input-module
       remote: petejohanson
-      revision: main
-    - name: zmk-driver-MLX90393
-      remote: te9no
       revision: main
   self:
     path: config

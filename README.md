@@ -1,4 +1,4 @@
-﻿# Futhesia Moduora (MaRiMo) - フセシア・モデュオラ（モヅク）
+﻿# Futhesia Moduora (MaRiMo) - フセシア・モデュオラ（マリモ）
 
 ```
                                                                                          
@@ -49,7 +49,7 @@ A distributed knowledge-type input device discovered in Realm of Split IV.
 
 ## Classification | 分類
 - **Species**: Synaptica Modularis (集合知式入力装置群)
-- **Common Name**: MaRiMo (モヅク)
+- **Common Name**: MaRiMo (マリモ)
 - **Origin**: Realm of Split IV / Hadop stratum (分割界IV・Hadop層)
 - **Distribution**: Collaborative developer habitats; replicates through Nodes and shared configs (共創環境に分布し、Nodeと設定共有で増殖)
 - **Nature**: ZMK-based split-grid organism with 3 Node slots; continually reconfigurable (ZMK駆動・3スロット拡張の分割格子型／可変・進化)
@@ -58,7 +58,7 @@ A distributed knowledge-type input device discovered in Realm of Split IV.
 MaRiMo is an intellectually and structurally evolving input device that spontaneously emerged from information dust accumulated in the Hadop stratum.
 Its appearance carries traits of MeKaBu, and by connecting three external modules (Nodes), it can freely change its form—much like MeKaBu.
 
-モヅクはHadop層に堆積する情報塵から自然発生した知的・構造的進化を続ける入力装置である。
+マリモはHadop層に堆積する情報塵から自然発生した知的・構造的進化を続ける入力装置である。
 その外見はMeKaBuの特徴を有しており、外部モジュール（通称：Node）を3つ接続することで、MeKaBuと同様に自在に形を変える。
 
 ## Key Features | 特徴
